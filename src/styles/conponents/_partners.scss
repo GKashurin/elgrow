@@ -1,0 +1,40 @@
+.partners {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  @include phones {
+    margin-bottom: 0;
+  }
+  &__item {
+    @include tablets {
+        width: 49%;
+    }
+    //@include phones {
+    //  width: 49%;
+    //}
+    margin-right: 2px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__img {
+    width: 270px;
+    height: 270px;
+    @include notebook {
+      height: 227px;
+      width: 227px;
+    }
+    @include tablets {
+      //width: 35vw;
+      height: 227px;
+      width: 338px;
+    }
+    @include phones {
+      width: 140px;
+      height: 150px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.header {
+  @include notebook {
+    margin-bottom: 30px;
+  }
+  @include tablets {
+  margin-bottom: 225px;
+  }
+  @include phones {
+    margin-bottom: 130px;
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 23px;
+  @include phones {
+    font-size: 16px;
+  }
+}
+
+.contacts {
+  text-align: end;
+}
+.contacts__phone {
+  font-weight: 700;
+  font-size: 18px;
+  @include phones {
+    font-size: 15px;
+  }
+}
+.contacts__desc {
+  color: #A6A6A6;
+  font-size: 13px;
+  @include phones {
+    font-size: 12px;
+  }
+}

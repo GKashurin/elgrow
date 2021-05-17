@@ -1,0 +1,137 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 78px;
+  @include phones {
+    margin-bottom: 32px;
+  }
+  &__item {
+    margin-bottom: 23px;
+    background-color: $blue;
+    max-width: 60%;
+    display: inline-block;
+    color: $white;
+    font-size: 26px;
+    padding: 32px;
+    border-radius: 2px 35px 35px 35px;
+
+    @include notebook {
+      margin-bottom: 18px;
+      font-size: 22px;
+      border-radius: 2px 25px 25px 25px;
+      line-height: 31px;
+      padding: 30px;
+    }
+    @include tablets {
+      padding: 27px;
+      max-width: 82%;
+      font-size: 22px;
+      border-radius: 2px 25px 25px 25px;
+      line-height: 31px;
+    }
+    @include phones {
+      font-size: 14px;
+      line-height: 17px;
+      border-radius: 2px 15px 15px 15px;
+      padding: 15px;
+      max-width: 87%;
+      margin-bottom: 13px;
+    }
+
+    &_green {
+      border-radius: 35px 2px 35px 35px;
+      background-color: $lime;
+      margin-bottom: 0;
+      margin-left: auto;
+      @include notebook {
+        margin-top: 58px;
+        border-radius: 25px 2px 25px 25px;
+        padding: 26px 29px;
+      }
+      @include tablets {
+        margin-top: 55px;
+        border-radius: 25px 2px 25px 25px;
+      }
+      @include phones {
+        margin-top: 36px;
+        border-radius: 15px 2px 15px 15px;
+        padding: 19px 16px;
+        max-width: 72%;
+      }
+    }
+  }
+}
+
+.messages__center {
+  @include notebook {
+    margin-bottom: 32px;
+  }
+  @include tablets {
+    margin-bottom: 55px;
+  }
+  @include phones {
+    margin-bottom: 17px
+  }
+}
+
+.messages__center > .messages__item {
+  @include notebook {
+    max-width: 58%;
+  }
+  @include tablets {
+    max-width: 80%;
+  }
+  @include phones {
+    max-width: 88%;
+  }
+}
+.messages__center > .messages__item_green {
+  @include notebook {
+    max-width: 50%;
+    margin-bottom: 70px;
+  }
+  @include tablets {
+    margin-top: 0;
+    margin-bottom: 70px;
+    max-width: 70%;
+  }
+  @include phones{
+  max-width: 77%;
+  margin-bottom: 30px;
+}
+}
+
+.messages__bottom {
+  @include notebook {
+    margin-bottom: 0;
+  }
+  @include tablets {
+    margin-bottom: 0;
+  }
+}
+
+.messages__bottom > .messages__item {
+  @include notebook {
+    max-width: 57%;
+  }
+  @include tablets {
+    max-width: 78%;
+  }
+  @include phones {
+    max-width: 90%;
+  }
+}
+
+.messages__bottom > .messages__item_green {
+  @include notebook {
+    margin-bottom: 70px;
+  }
+  @include tablets {
+    margin-bottom: 70px;
+  }
+  @include phones {
+    max-width: 86%;
+    margin-bottom: 27px;
+  }
+}
