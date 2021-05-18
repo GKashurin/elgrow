@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 95px;
+  margin-bottom: 100px;
 
   @include notebook {
     margin-bottom: 78px;
@@ -14,9 +14,9 @@
     margin-bottom: 26px;
   }
   &__item {
-    margin-bottom: 23px;
+    margin-bottom: 28px;
     background-color: $blue;
-    max-width: 55%;
+    max-width: 54%;
     display: inline-block;
     color: $white;
     font-size: 26px;
@@ -49,13 +49,15 @@
 }
 
 .messages > .messages__item-green {
+  font-size: 26px;
+  padding: 30px 36px;
   color: white;
   border-radius: 35px 2px 35px 35px;
   background-color: $lime;
   margin-bottom: 0;
   margin-left: auto;
   margin-top: 58px;
-  max-width: 47%;
+  //max-width: 47%;
   @include notebook {
     font-size: 22px;
     margin-top: 58px;
@@ -81,6 +83,7 @@
 
 
 .messages__center {
+  margin-bottom: 46px;
   @include notebook {
     margin-bottom: 40px;
   }
@@ -105,6 +108,8 @@
 }
 .messages__center > .messages__item-green {
   color: white;
+  max-width: 48%;
+  margin-bottom: 77px;
   @include notebook {
     max-width: 50%;
     margin-bottom: 70px;
@@ -122,12 +127,13 @@
 }
 
 .messages__bottom {
-  @include notebook {
-    margin-bottom: 0;
-  }
-  @include tablets {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0;
+  //@include notebook {
+  //  margin-bottom: 0;
+  //}
+  //@include tablets {
+  //  margin-bottom: 0;
+  //}
 }
 
 .messages__bottom > .messages__item {
@@ -143,6 +149,7 @@
 }
 
 .messages__bottom > .messages__item-green {
+  margin-bottom: 72px;
   color: white;
   @include notebook {
     margin-bottom: 70px;

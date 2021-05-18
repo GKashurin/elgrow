@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  width: 60%;
   min-height: 50vh;
   margin: 0 auto;
   @include notebook {
@@ -14,6 +14,7 @@
 }
 
 .input {
+  padding: 55px 0 37px 0;
   color: $black;
   font-size: 27px;
   height: 40px;
@@ -54,20 +55,22 @@
   color: $white;
   font-size: 22px;
   background-color: $black;
-  padding: 10px;
+  padding: 24px;
   width: 100%;
   border-radius: 15px;
   border: none;
   cursor: pointer;
   margin-bottom: 65px;
-  margin-top: 40px;
+  margin-top: 54px;
   @include notebook {
     padding: 25px;
     font-size: 18px;
+    margin-top: 40px;
   }
   @include tablets {
     padding: 25px;
     font-size: 18px;
+    margin-top: 40px;
   }
   @include phones {
     padding: 15px;

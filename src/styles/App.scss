@@ -2,13 +2,7 @@
 @import 'normalize';
 @import 'conponents/all';
 
-body {
-  //background-color: $backgroundLite;
-  //padding: 40px 0;
-}
-
 .wrapper {
-  //width: calc(100vw - 80px);
   height: 100%;
   margin: 0 auto;
   max-width: 1360px;
@@ -23,8 +17,6 @@ body {
 }
 
 .container {
-  //width: 97%;
-  //margin: 0 auto;
   @include tablets {
     width: 100%;
   }
@@ -35,7 +27,7 @@ body {
   flex-direction: column;
   width: 100%;
   padding: 30px;
-  margin-bottom: 165px;
+  margin-bottom: 180px;
   @include notebook {
     padding: 30px 7px;
     margin-bottom: 114px;
@@ -88,6 +80,9 @@ body {
     &_third {
       padding-left: 11%;
       margin-bottom: 0;
+      @include notebook {
+        padding-left: 10%;
+      }
       @include phones {
         padding-left: 10%;
       }
@@ -119,8 +114,9 @@ body {
 }
 
 .about {
+  margin-bottom: 78px;
   @include notebook {
-    margin-bottom: 11px;
+    margin-bottom: 17px;
   }
   @include tablets {
     margin-bottom: 44px;
