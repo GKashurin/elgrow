@@ -3,7 +3,7 @@
 @import 'conponents/all';
 
 body {
-  background-color: $backgroundLite;
+  //background-color: $backgroundLite;
   //padding: 40px 0;
 }
 
@@ -19,13 +19,12 @@ body {
   }
   @include phones {
     padding: 20px
-
   }
 }
 
 .container {
-  width: 98%;
-  margin: 0 auto;
+  //width: 97%;
+  //margin: 0 auto;
   @include tablets {
     width: 100%;
   }
@@ -39,7 +38,7 @@ body {
   margin-bottom: 165px;
   @include notebook {
     padding: 30px 7px;
-    margin-bottom: 110px;
+    margin-bottom: 114px;
   }
   @include tablets {
     padding: 0;
@@ -47,13 +46,14 @@ body {
   }
   @include phones {
     padding: 0;
-    margin-bottom: 104px;
+    margin-bottom: 105px;
   }
 
   &__title {
     font-size: 100px;
     font-weight: 500;
     line-height: 95px;
+    margin-bottom: 47px;
 
     @include notebook {
       font-size: 82px;
@@ -86,18 +86,24 @@ body {
       }
     }
     &_third {
-      padding-left: 10%;
+      padding-left: 11%;
       margin-bottom: 0;
       @include phones {
-        padding-left: 9%;
+        padding-left: 10%;
       }
     }
     &_fourth {
       text-align: right;
       margin-bottom: 0;
-      //@include phones {
-      //  padding-right: 8%;
-      //}
+      @include notebook {
+        padding-right: 12px;
+      }
+      @include tablets {
+        padding-right: 12px;
+      }
+      @include phones {
+        padding-right: 0px;
+      }
     }
     &_fourth > span {
       color: $lime
@@ -114,13 +120,13 @@ body {
 
 .about {
   @include notebook {
-    margin-bottom: 8px;
+    margin-bottom: 11px;
   }
   @include tablets {
-    margin-bottom: 52px;
+    margin-bottom: 44px;
   }
   @include phones {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
 }
 
@@ -128,12 +134,13 @@ body {
   display: flex;
   align-items: center;
   margin: 0 auto;
+  margin-bottom: 40px;
   @include notebook {
     width: 65%;
     margin-bottom: 47px;
   }
   @include tablets {
-    width: 90%;
+    width: 88%;
     margin-bottom: 206px;
   }
   @include phones {

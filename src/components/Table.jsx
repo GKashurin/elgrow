@@ -3,7 +3,7 @@ import React from "react";
 const Table = () => {
 	return (
 		<div className="table">
-			<div className="services">
+			<div className="services services_mobile">
 				<div className="service__name">
 					<span>#&nbsp;</span><p>Mobile</p>
 				</div>
@@ -16,7 +16,7 @@ const Table = () => {
 					<span>SENIOR</span>
 				</div>
 			</div>
-			<div className="services">
+			<div className="services services_frontend">
 				<div className="service__name">
 					<span>#&nbsp;</span><p>Frontend</p>
 				</div>
@@ -42,7 +42,7 @@ const Table = () => {
 					<span>#&nbsp;</span><p>Backend</p>
 				</div>
 				<div className="service__stack service__stack_backend">
-					<div className="stack__item stack__item_python">Python
+					<div className="stack__item stack__item_python" id="python">Python
 						<div>Django, Flask</div>
 					</div>
 					<div className="stack__item">PHP
@@ -56,7 +56,7 @@ const Table = () => {
 					<span>SENIOR</span>
 				</div>
 			</div>
-			<div className="services">
+			<div className="services services_blockchain">
 				<div className="service__name">
 					<span>#&nbsp;</span><p>Blockchain</p>
 				</div>
@@ -70,7 +70,7 @@ const Table = () => {
 					<span>SENIOR</span>
 				</div>
 			</div>
-			<div className="services">
+			<div className="services services_ux">
 				<div className="service__name">
 					<span>#&nbsp;</span><p>UX / UI</p>
 				</div>
@@ -84,7 +84,7 @@ const Table = () => {
 					<span>SENIOR</span>
 				</div>
 			</div>
-			<div className="services">
+			<div className="services services_management">
 				<div className="service__name">
 					<span>#&nbsp;</span><p>Project Management</p>
 				</div>

@@ -5,8 +5,11 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20px;
+  @include tablets {
+    margin-bottom: 7px;
+  }
   @include phones {
-    margin-bottom: 0;
+    margin-bottom: 18px;
   }
   &__item {
     @include tablets {
@@ -29,12 +32,12 @@
     }
     @include tablets {
       //width: 35vw;
-      height: 227px;
+      height: 232px;
       width: 100%; //width: 338px;
     }
     @include phones {
       width: 100%;
-      height: 150px;
+      height: 142px;
     }
   }
 }

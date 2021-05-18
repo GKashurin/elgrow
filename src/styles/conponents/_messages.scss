@@ -2,70 +2,87 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 78px;
+  margin-bottom: 95px;
+
+  @include notebook {
+    margin-bottom: 78px;
+  }
+  @include tablets {
+    margin-bottom: 75px;
+  }
   @include phones {
     margin-bottom: 26px;
   }
   &__item {
     margin-bottom: 23px;
     background-color: $blue;
-    max-width: 60%;
+    max-width: 55%;
     display: inline-block;
     color: $white;
     font-size: 26px;
-    padding: 32px;
+    padding: 36px;
     border-radius: 2px 35px 35px 35px;
+    line-height: 32px;
 
     @include notebook {
-      margin-bottom: 18px;
+      margin-bottom: 13px;
       font-size: 22px;
       border-radius: 2px 25px 25px 25px;
-      line-height: 31px;
       padding: 30px;
+      max-width: 59%;
     }
     @include tablets {
       padding: 27px;
       max-width: 82%;
       font-size: 22px;
       border-radius: 2px 25px 25px 25px;
-      line-height: 31px;
     }
     @include phones {
       font-size: 14px;
       line-height: 17px;
       border-radius: 2px 15px 15px 15px;
       padding: 15px;
-      max-width: 87%;
+      max-width: 94%;
       margin-bottom: 13px;
-    }
-
-    &_green {
-      border-radius: 35px 2px 35px 35px;
-      background-color: $lime;
-      margin-bottom: 0;
-      margin-left: auto;
-      @include notebook {
-        margin-top: 58px;
-        border-radius: 25px 2px 25px 25px;
-        padding: 26px 27px;
-      }
-      @include tablets {
-        margin-top: 55px;
-        border-radius: 25px 2px 25px 25px;
-      }
-      @include phones {
-        margin-top: 36px;
-        border-radius: 15px 2px 15px 15px;
-        padding: 19px 16px;
-        max-width: 72%;
-      }
     }
   }
 }
 
+.messages > .messages__item-green {
+  color: white;
+  border-radius: 35px 2px 35px 35px;
+  background-color: $lime;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-top: 58px;
+  max-width: 47%;
+  @include notebook {
+    font-size: 22px;
+    margin-top: 58px;
+    border-radius: 25px 2px 25px 25px;
+    padding: 26px 27px;
+    max-width: 53%;
+  }
+  @include tablets {
+    font-size: 22px;
+    margin-top: 65px;
+    border-radius: 25px 2px 25px 25px;
+    max-width: 72%;
+    padding: 26px 32px;
+  }
+  @include phones {
+    font-size: 14px;
+    margin-top: 36px;
+    border-radius: 15px 2px 15px 15px;
+    padding: 19px 16px;
+    max-width: 71%;
+  }
+}
+
+
 .messages__center {
   @include notebook {
-    margin-bottom: 32px;
+    margin-bottom: 40px;
   }
   @include tablets {
     margin-bottom: 55px;
@@ -86,17 +103,19 @@
     max-width: 94%;
   }
 }
-.messages__center > .messages__item_green {
+.messages__center > .messages__item-green {
+  color: white;
   @include notebook {
     max-width: 50%;
     margin-bottom: 70px;
   }
   @include tablets {
     margin-top: 0;
-    margin-bottom: 70px;
+    margin-bottom: 81px;
     max-width: 70%;
   }
   @include phones{
+    font-size: 14px;
   max-width: 80%;
   margin-bottom: 30px;
 }
@@ -123,15 +142,16 @@
   }
 }
 
-.messages__bottom > .messages__item_green {
+.messages__bottom > .messages__item-green {
+  color: white;
   @include notebook {
     margin-bottom: 70px;
   }
   @include tablets {
-    margin-bottom: 70px;
+    margin-bottom: 74px;
   }
   @include phones {
-    max-width: 100%;
+    max-width: 94%;
     padding: 13px 19px;
     margin-bottom: 35px;
   }

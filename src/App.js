@@ -63,7 +63,7 @@ const App = () => {
 									<span data-aos="example-anim1" className="messages__item">
 								Усилим вашу команду, аккуратно вклинимся в уже существующие бизнес и dev-процессы, подхватим, сделаем,оттестируем и вовремя завершим все поставленные задачи
                     				</span>
-									<span data-aos="example-anim1" className="messages__item messages__item_green">
+									<span data-aos="example-anim1" className="messages__item-green">
                         		Хорошо, а какие у вас компетенции?
                     				</span>
 								</div>
@@ -71,7 +71,7 @@ const App = () => {
 								<Table/>
 
 								<div className="messages messages__center">
-									<span data-aos="example-anim1" className="messages__item messages__item_green">
+									<span data-aos="example-anim1" className="messages__item-green">
                         				А с какими клиентами вы работали и работаете?
                     				</span>
 									<span data-aos="example-anim1" className="messages__item">
@@ -82,7 +82,7 @@ const App = () => {
 								<Partners theme={theme}/>
 
 								<div className="messages messages__bottom">
-									<span data-aos="example-anim1" className="messages__item messages__item_green">
+									<span data-aos="example-anim1" className="messages__item-green">
                         				Круто, а как а вами связаться?
                     				</span>
 									<span data-aos="example-anim1" className="messages__item">
