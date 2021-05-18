@@ -30,6 +30,14 @@
   &:last-child {
     border-bottom: 2px solid #DDDDDD;
   }
+  &_backend {
+    @include notebook {
+      padding: 86px 0 80px 0;
+    }
+    @include tablets {
+      padding: 50px 0 80px 0;
+    }
+  }
 }
 
 .service {
@@ -91,7 +99,7 @@
     }
     @include tablets {
       font-size: 18px;
-      padding-left: 20px;
+      padding-left: 30px;
       margin-bottom: 25px;
       align-items: flex-start;
       width: 100%;
@@ -111,7 +119,7 @@
     }
     @include tablets {
       flex-direction: row;
-      padding-left: 20px;
+      padding-left: 30px;
     }
     & > span {
       background-color: #A6A6A6;
@@ -166,5 +174,13 @@
 .stack__item > div {
   color: #A6A6A6;
   font-size: 14px;
+}
 
+.stack__item_python {
+  @include tablets {
+    margin-bottom: 3px;
+  }
+  @include phones {
+    margin-bottom: 32px;
+  }
 }
