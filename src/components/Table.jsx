@@ -3,7 +3,7 @@ import React from "react";
 const Table = () => {
 	return (
 		<div className="table">
-			<div className="services services_mobile">
+			<div className="services services_mobile" data-aos="example-anim1">
 				<div className="service__name">
 					<span>#&nbsp;</span><p>Mobile</p>
 				</div>
@@ -16,7 +16,7 @@ const Table = () => {
 					<span>SENIOR</span>
 				</div>
 			</div>
-			<div className="services services_frontend">
+			<div className="services services_frontend" data-aos="example-anim1">
 				<div className="service__name">
 					<span>#&nbsp;</span><p>Frontend</p>
 				</div>
@@ -36,8 +36,8 @@ const Table = () => {
 					<span>MIDDLE</span>
 					<span>SENIOR</span>
 				</div>
-			</div>
-			<div className="services services_backend">
+			</div >
+			<div className="services services_backend" data-aos="example-anim1">
 				<div className="service__name">
 					<span>#&nbsp;</span><p>Backend</p>
 				</div>
@@ -56,7 +56,7 @@ const Table = () => {
 					<span>SENIOR</span>
 				</div>
 			</div>
-			<div className="services services_blockchain">
+			<div className="services services_blockchain" data-aos="example-anim1">
 				<div className="service__name">
 					<span>#&nbsp;</span><p>Blockchain</p>
 				</div>
@@ -70,7 +70,7 @@ const Table = () => {
 					<span>SENIOR</span>
 				</div>
 			</div>
-			<div className="services services_ux">
+			<div className="services services_ux" data-aos="example-anim1">
 				<div className="service__name">
 					<span>#&nbsp;</span><p>UX / UI</p>
 				</div>
@@ -83,8 +83,8 @@ const Table = () => {
 					<span>MIDDLE</span>
 					<span>SENIOR</span>
 				</div>
-			</div>
-			<div className="services services_management">
+			</div >
+			<div className="services services_management" data-aos="example-anim1">
 				<div className="service__name">
 					<span>#&nbsp;</span><p>Project Management</p>
 				</div>
