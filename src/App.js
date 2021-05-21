@@ -38,8 +38,7 @@ const App = () => {
 
 						<Header/>
 
-						<section
-							className="content">
+						<section className="content">
 							<h1 className="content__title">
 								<div className="content__title content__title_first">Аутстаффинг</div>
 								<div className="content__title content__title_second">и аутсорсинг</div>
