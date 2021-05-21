@@ -1,6 +1,7 @@
 import React from "react";
 import {Formik} from "formik";
 import * as Yup from "yup";
+import classNames from 'classnames';
 
 const Form = () => {
 	const phoneRegExp = /^(\+?\d{0,4})?\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{4}\)?)?$/
@@ -38,57 +39,86 @@ const Form = () => {
 					  dirty
 				  }) => (
 					<div className='form' data-aos="example-anim1">
-						<p>
-							<input
-								className={'input'}
-								type='text'
-								name='name'
-								onChange={handleChange}
-								onBlur={handleBlur}
-								value={values.name}
-								placeholder="Вас зовут"
-							/>
-						</p>
-						{touched.name && errors.name && <p className={'error'}>{errors.name}</p>}
+						<div className="form-item">
+							<p>
+								<input
+									className={classNames("input", {
+										"input input_error" : touched.name && errors.name
+									})}
+									type='text'
+									name='name'
+									onChange={handleChange}
+									onBlur={handleBlur}
+									value={values.name}
+									placeholder=' '
+								/>
+								<label
+									className={classNames("", {
+										"error" : touched.name && errors.name
+									})}
+									htmlFor="name">Вас зовут
+								</label>
+							</p>{touched.name && errors.name && <p className={'error'}>{errors.name}</p>}
+						</div>
 
-						<p>
-							<input
-								className={'input'}
-								type='tel'
-								name='phone'
-								onChange={handleChange}
-								onBlur={handleBlur}
-								value={values.phone}
-								placeholder="Ваш телефон"
-							/>
-						</p>
-						{touched.phone && errors.phone && <p className={'error'}>{errors.phone}</p>}
+						<div className="form-item">
+							<p>
+								<input
+									className={classNames("input", {
+										"input input_error" : touched.phone && errors.phone
+									})}
+									type='tel'
+									name='phone'
+									onChange={handleChange}
+									onBlur={handleBlur}
+									value={values.phone}
+									placeholder=' '
+								/>
+								<label
+									className={classNames("", {
+										"error" : touched.phone && errors.phone
+									})}
+									htmlFor="phone">Ваш телефон</label>
+							</p>
+							{touched.phone && errors.phone && <p className={'error'}>{errors.phone}</p>}
+						</div>
 
-						<p>
-							<input
-								className={'input'}
-								type='text'
-								name='email'
-								onChange={handleChange}
-								onBlur={handleBlur}
-								value={values.email}
-								placeholder="E-mail"
-							/>
-						</p>
-						{touched.email && errors.email && <p className={'error'}>{errors.email}</p>}
+						<div className="form-item">
+							<p>
+								<input
+									className={classNames("input", {
+										"input input_error" : touched.email && errors.email
+									})}
+									type='text'
+									name='email'
+									onChange={handleChange}
+									onBlur={handleBlur}
+									value={values.email}
+									placeholder=' '
+								/>
+								<label
+									className={classNames("", {
+									"error" : touched.email && errors.email
+								})}
+									   htmlFor="email">E-mail</label>
+							</p>
+							{touched.email && errors.email && <p className={'error'}>{errors.email}</p>}
+						</div>
 
-						<p>
-							<input
-								className={'input'}
-								type='text'
-								name='addition'
-								onChange={handleChange}
-								onBlur={handleBlur}
-								value={values.text}
-								placeholder="Дополнительные сведения"
-							/>
-						</p>
-						{touched.addition && errors.addition && <p className={'error'}>{errors.addition}</p>}
+						<div className="form-item">
+							<p>
+								<input
+									className={'input'}
+									type='text'
+									name='addition'
+									onChange={handleChange}
+									onBlur={handleBlur}
+									value={values.text}
+									placeholder=' '
+								/>
+								<label htmlFor="addition">Дополнительные сведения</label>
+							</p>
+						</div>
 
 						<button
 							className="button"

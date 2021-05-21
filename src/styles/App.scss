@@ -29,7 +29,7 @@
   padding: 30px;
   margin-bottom: 180px;
   @include notebook {
-    padding: 30px 7px;
+    padding: 30px 3px;
     margin-bottom: 114px;
   }
   @include tablets {
@@ -107,7 +107,7 @@
   }
 }
 [data-aos="example-anim1"] {
-  opacity: 0.1;
+  opacity: 0;
   transition-property: opacity;
   &.aos-animate {
     opacity: 1;

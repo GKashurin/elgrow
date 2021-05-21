@@ -22,10 +22,12 @@ const Table = () => {
 				</div>
 				<div className="service__stack service__stack_frontend">
 					<div className="stack__item">React JS
-						<div>Redux</div>
-						<div>redux-saga</div>
-						<div>redux-thunk</div>
-						<div>react-hooks</div>
+						<div className="stack__item-list">
+							<div>Redux</div>
+							<div>redux-saga</div>
+							<div>redux-thunk</div>
+							<div>react-hooks</div>
+						</div>
 					</div>
 					<div className="stack__item">Vue JS
 						<div>Vuex, vue-router</div>
