@@ -1,7 +1,7 @@
 import { createGlobalStyle} from "styled-components"
 export const GlobalStyles = createGlobalStyle`
 
-.wrapper, h1, h4, a, p, img, .input {
+body, .wrapper, h1, h4, a, p, img, .input {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
   }
