@@ -113,8 +113,10 @@ input:not(:placeholder-shown)+label {
   cursor: pointer;
   margin-bottom: 65px;
   margin-top: 57px;
+  font-weight: 600;
   &:hover {
     background-color: $lime;
+    color: $white;
   }
   @include notebook {
     padding: 25px;

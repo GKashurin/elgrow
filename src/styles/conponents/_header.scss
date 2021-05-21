@@ -1,15 +1,5 @@
 .header {
-  margin-bottom: 53px;
-
-  @include notebook {
-    margin-bottom: 30px;
-  }
-  @include tablets {
-  margin-bottom: 225px;
-  }
-  @include phones {
-    margin-bottom: 130px;
-  }
+  margin-bottom: 10px;
 }
 .container {
   display: flex;

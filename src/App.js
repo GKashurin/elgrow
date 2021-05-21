@@ -36,26 +36,31 @@ const App = () => {
 				<div className="App">
 					<div className="wrapper">
 
-						<Header/>
 
-						<section className="content">
-							<h1 className="content__title">
-								<div className="content__title content__title_first">Аутстаффинг</div>
-								<div className="content__title content__title_second">и аутсорсинг</div>
-								<div className="content__title content__title_third">разработчиков</div>
-								<div className="content__title content__title_fourth">уровня <span>middle+</span></div>
-							</h1>
-							<div className="description">
-								<h4 className="description__title">
-									Frontend, backend web&mobile apps, UX/UI, Project/Product management
-								</h4>
-								<div onClick={() => (animateScroll.scrollToBottom())}>
-									{theme === 'light' ? <img className="contactSvg" src={ContactsSVG} alt="img"/> : <img className="contactSvg" src={ContactsSVGDark} alt="img"/>}
+
+
+						<section className="maincontent">
+							<Header/>
+							<div>
+								<h1 className="content__title">
+									<div className="content__title content__title_first">Аутстаффинг</div>
+									<div className="content__title content__title_second">и аутсорсинг</div>
+									<div className="content__title content__title_third">разработчиков</div>
+									<div className="content__title content__title_fourth">уровня <span>middle+</span></div>
+								</h1>
+								<div className="description">
+									<h4 className="description__title">
+										Frontend, backend web&mobile apps, UX/UI, Project/Product management
+									</h4>
+									<div onClick={() => (animateScroll.scrollToBottom())}>
+										{theme === 'light' ? <img className="contactSvg" src={ContactsSVG} alt="img"/> : <img className="contactSvg" src={ContactsSVGDark} alt="img"/>}
+									</div>
 								</div>
 							</div>
 
 							<DotsAnimated />
-
+						</section>
+						<section className="content">
 							<div className="about">
 								<div className="messages">
 									<span data-aos="example-anim1" className="messages__item">Привет, мы Elgrow!</span>

@@ -15,5 +15,13 @@ body, .wrapper, h1, h4, a, p, img, .input {
     background-color: ${({ theme }) => theme.text};
     color: ${({ theme }) => theme.body}
   }
-    
+   .services {
+    border-top: 2px solid ${({ theme }) => theme.border};
+   }
+   .services:last-child {
+    border-bottom: 2px solid ${({ theme }) => theme.border};
+}
+.input {
+  border-bottom: 2px solid ${({ theme }) => theme.input};
+}
   `
