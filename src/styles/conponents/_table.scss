@@ -1,14 +1,14 @@
 .table {
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 104px;
   @include notebook {
-    margin-bottom: 30px;
+    margin-top: 82px;
   }
   @include tablets {
     margin-bottom: 74px;
   }
   @include phones {
-    margin-bottom: 60px;
+    margin-bottom: 26px;
   }
 }
 

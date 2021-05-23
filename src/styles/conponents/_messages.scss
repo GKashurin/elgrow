@@ -61,6 +61,7 @@
   margin-bottom: 0;
   margin-left: auto;
   margin-top: 58px;
+  font-weight: 600;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
   @include notebook {
     font-size: 22px;
@@ -112,20 +113,24 @@
   }
 }
 .messages__center > .messages__item-green {
+  font-weight: 600;
   color: white;
   max-width: 48%;
   margin-bottom: 77px;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
+  margin-top: 0;
   @include notebook {
     max-width: 50%;
     margin-bottom: 80px;
     padding: 26px 25px;
     max-width: 51%;
+    //margin-top: 82px;
   }
   @include tablets {
     margin-top: 0;
     margin-bottom: 81px;
     max-width: 70%;
+    //margin-top: 75px;
   }
   @include phones{
     font-size: 14px;

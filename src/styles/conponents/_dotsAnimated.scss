@@ -23,13 +23,13 @@
   animation-delay: 0.2s;
   background-color: #C1E0B3;
   @include notebook {
-    left: 40px;
+    left: 30px;
   }
   @include tablets {
     left: 30px;
   }
   @include phones {
-    left: 15px;
+    left: 20px;
   }
 }
 
@@ -39,13 +39,13 @@
   animation-delay: 0.3s;
   background-color: #9AD182;
   @include notebook {
-    left: 68px;
+    left: 58px;
   }
   @include tablets {
     left: 58px;
   }
   @include phones {
-    left: 30px;
+    left: 35px;
   }
 }
 
@@ -55,13 +55,13 @@
   animation-delay: 0.4s;
   background-color: $lime;
   @include notebook {
-    left: 96px;
+    left: 86px;
   }
   @include tablets {
     left: 86px;
   }
   @include phones {
-    left: 45px;
+    left: 50px;
   }
 }
 

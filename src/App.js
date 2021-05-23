@@ -18,9 +18,8 @@ const App = () => {
 	const themeToggler = () => {
 		const time = new Date()
 		const hour = time.getHours()
-		hour > 8 && hour <= 21 ? setTheme('light') : setTheme('dark')
+		hour > 8 && hour < 21 ? setTheme('light') : setTheme('dark')
 	}
-
 	 window.onscroll = function () {
 		 Aos.init({ duration: 2000 })
 	}
@@ -35,10 +34,6 @@ const App = () => {
 				<GlobalStyles/>
 				<div className="App">
 					<div className="wrapper">
-
-
-
-
 						<section className="maincontent">
 							<Header/>
 							<div>

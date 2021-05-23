@@ -4,6 +4,8 @@ export const lightTheme = {
     text__grey: '#A6A6A6',
     border: '#DDDDDD',
     input: '#DDDDDD',
+    error: '#DC2C2C',
+    input__focus: '#464646'
 }
 export const darkTheme = {
     body: '#151515',
@@ -11,4 +13,6 @@ export const darkTheme = {
     text__grey: '#676767',
     border: '#F5F5F5',
     input: '#464646',
+    error: '#DC2C2C',
+    input__focus: '#F5F5F5',
 }

@@ -24,4 +24,15 @@ body, .wrapper, h1, h4, a, p, img, .input {
 .input {
   border-bottom: 2px solid ${({ theme }) => theme.input};
 }
+
+.input:focus {
+  border-bottom: 2px solid ${({ theme }) => theme.input__focus};
+}
+
+.input_error {
+  border-bottom: 2px solid ${({ theme }) => theme.error};
+}
+.input_error:focus {
+  border-bottom: 2px solid ${({ theme }) => theme.error};
+}
   `
