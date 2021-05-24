@@ -25,6 +25,7 @@
     border-radius: 2px 35px 35px 35px;
     line-height: 1.45;
     //filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 
     @include notebook {
       margin-bottom: 31px;
@@ -62,6 +63,7 @@
   margin-left: auto;
   margin-top: 58px;
   font-weight: 600;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   //filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
   @include notebook {
     font-size: 22px;
@@ -101,6 +103,7 @@
 }
 
 .messages__center > .messages__item {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   //filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
   @include notebook {
     max-width: 58%;
@@ -117,7 +120,8 @@
   color: white;
   max-width: 48%;
   margin-bottom: 77px;
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  //filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
   margin-top: 0;
   @include notebook {
     max-width: 50%;
@@ -144,6 +148,8 @@
 }
 
 .messages__bottom > .messages__item {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  //background-clip: border-box;
   //filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
   @include notebook {
     max-width: 57%;
@@ -158,6 +164,7 @@
 }
 
 .messages__bottom > .messages__item-green {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   //filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
   margin-bottom: 72px;
   color: white;
