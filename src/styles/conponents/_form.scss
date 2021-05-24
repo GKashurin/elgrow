@@ -86,7 +86,6 @@ input:not(:placeholder-shown)+label {
   }
 }
 
-
 .button {
   color: $white;
   font-size: 22px;
@@ -122,9 +121,14 @@ input:not(:placeholder-shown)+label {
   }
 }
 
-.error {
-  color: $error
+ .error {
+  color: $error;
 }
+
+ .error {
+   font-size: 13px;
+ }
+
 .feedback {
   color: #A6A6A6;
   font-size: 18px;

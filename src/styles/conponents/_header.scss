@@ -1,13 +1,16 @@
 .header {
-  margin-bottom: 10px;
-  @include notebook {
-    margin-bottom: 7px;
-  }
+  min-height: 3rem;
+  // margin-bottom: 10px;
+  // @include notebook {
+  //   margin-bottom: 7px;
+  // }
+  
 }
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 30px;
 }
 
 .logo {

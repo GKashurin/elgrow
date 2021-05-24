@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   margin-bottom: 40px;
   @include notebook {
@@ -10,6 +10,7 @@
   }
   @include tablets {
     margin-bottom: 27px;
+    flex-wrap: wrap;
   }
   @include phones {
     margin-bottom: 38px;

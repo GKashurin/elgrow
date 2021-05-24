@@ -33,9 +33,10 @@ const App = () => {
 			<>
 				<GlobalStyles/>
 				<div className="App">
+					<Header/>
 					<div className="wrapper">
 						<section className="maincontent">
-							<Header/>
+							<div></div>
 							<div>
 								<h1 className="content__title">
 									<div className="content__title content__title_first">Аутстаффинг</div>
@@ -93,8 +94,8 @@ const App = () => {
 							<Form/>
 
 						</section>
-						<Footer/>
 					</div>
+					<Footer/>
 				</div>
 			</>
 		</ThemeProvider>

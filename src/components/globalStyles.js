@@ -16,10 +16,10 @@ body, .wrapper, h1, h4, a, p, img, .input {
     color: ${({ theme }) => theme.body}
   }
    .services {
-    border-top: 2px solid ${({ theme }) => theme.border};
+    border-top: 2px solid ${({ theme }) => theme.input};
    }
    .services:last-child {
-    border-bottom: 2px solid ${({ theme }) => theme.border};
+    border-bottom: 2px solid ${({ theme }) => theme.input};
 }
 .input {
   border-bottom: 2px solid ${({ theme }) => theme.input};

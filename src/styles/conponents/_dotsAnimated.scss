@@ -1,3 +1,7 @@
+.row {
+  position: relative;
+}
+
 #dots1 {
   display: block;
   height: 50px;
@@ -18,50 +22,29 @@
 }
 
 #dots1 span:nth-child(1) {
-  left: 80px;
+  left: 0;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
   background-color: #C1E0B3;
-  @include notebook {
-    left: 30px;
-  }
-  @include tablets {
-    left: 30px;
-  }
+}
+
+#dots1 span:nth-child(2) {
+  left: 28px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  background-color: #9AD182;
   @include phones {
     left: 20px;
   }
 }
 
-#dots1 span:nth-child(2) {
-  left: 108px;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  background-color: #9AD182;
-  @include notebook {
-    left: 58px;
-  }
-  @include tablets {
-    left: 58px;
-  }
-  @include phones {
-    left: 35px;
-  }
-}
-
 #dots1 span:nth-child(3) {
-  left: 136px;
+  left: 56px;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   background-color: $lime;
-  @include notebook {
-    left: 86px;
-  }
-  @include tablets {
-    left: 86px;
-  }
   @include phones {
-    left: 50px;
+    left: 40px;
   }
 }
 
